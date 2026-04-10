@@ -19,7 +19,7 @@ close all;
 % Add the VV-KRR toolbox folder and all its subfolders.
 % The folder "tool_VVKRR_v0" is assumed to be located in the same
 % directory as this main script.
-addpath(genpath('tool_VVKRR_v0'));
+addpath(genpath('../tool_VVKRR_v0'));
 
 % Plot/font settings used in the figures
 FS = 15;
@@ -117,8 +117,8 @@ fprintf('Training time: %.4f seconds\n', time_training);
 fprintf('Prediction time: %.4f seconds\n', time_prediction);
 
 % Error metrics
-fprintf('L2 relative error: %.4e\n', L2_rel_Error);
-fprintf('Linf relative error: %.4e\n', Linf_rel_Error);
+fprintf('L2 relative error: %.1f\n', L2_rel_Error);
+fprintf('Linf relative error: %.1f\n', Linf_rel_Error);
 
 
 %% Scatter plot

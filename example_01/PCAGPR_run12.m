@@ -140,8 +140,9 @@ fprintf('Number of retained coefficients: %d\n', nbar * size(X_ED_norm,1));
 fprintf('Training time: %.4f seconds\n', t_GPR);
 
 % Relative error metrics
-fprintf('L2 relative error: %.4e\n', L2_rel_Error);
-fprintf('Linf relative error: %.4e\n', Linf_rel_Error);
+% Error metrics
+fprintf('L2 relative error: %.1f\n', L2_rel_Error);
+fprintf('Linf relative error: %.1f\n', Linf_rel_Error);
 fprintf('----------------------\n');
 
 %% Scatter plot

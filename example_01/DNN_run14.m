@@ -258,8 +258,8 @@ fprintf('Best Activation2: %s\n', string(bestParams.Activation2));
 
 fprintf('Training time: %.4f seconds\n', t_DNN);
 
-fprintf('L2 relative error (dB): %.4e\n', L2_rel_Error);
-fprintf('Linf relative error (dB): %.4e\n', Linf_rel_Error);
+fprintf('L2 relative error (dB): %.1f\n', L2_rel_Error);
+fprintf('Linf relative error (dB): %.1f\n', Linf_rel_Error);
 fprintf('----------------------\n');
 
 %% Scatter plot
