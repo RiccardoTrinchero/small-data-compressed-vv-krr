@@ -1,10 +1,7 @@
-# compressed-vv-krr
-
-MATLAB implementation of compressed vector-valued kernel ridge regression (VV-KRR) for data-efficient surrogate modeling of electromagnetic structures and microwave components.
 
 ## Overview
 
-This repository contains the MATLAB code used to reproduce the results of the first benchmark example presented in the paper, including:
+This repository contains the MATLAB code used to reproduce the results of the first benchmark example presented in the paper "Small-Data Modeling of Electromagnetic Structures via Compressed Vector-Valued Kernel Ridge Regression" (submitted), including:
 
 - the proposed compressed VV-KRR model,
 - the PCA+GPR baseline,
@@ -20,7 +17,6 @@ This public release currently includes:
 - the MATLAB implementation of the proposed compressed VV-KRR method,
 - the MATLAB implementation of the PCA+GPR comparison model,
 - the MATLAB implementation of the DNN comparison model,
-- scripts for training, prediction, error evaluation, and figure generation for Example 1.
 
 The other examples discussed in the paper are not included in this release.
 
@@ -42,16 +38,3 @@ The other examples discussed in the paper are not included in this release.
   - PCA + Gaussian-process regression
   - fully connected deep neural network
 
-## Repository structure
-
-```text
-.
-├── data/              % dataset for Example 1
-├── examples/          % scripts to reproduce Example 1
-├── kernels/           % kernel functions
-├── training/          % VV-KRR training routines
-├── prediction/        % VV-KRR prediction routines
-├── baselines/         % PCA+GPR and DNN baseline scripts
-├── utils/             % utility functions
-├── README.md
-├── LICENSE
