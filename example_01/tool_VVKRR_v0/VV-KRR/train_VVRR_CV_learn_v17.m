@@ -139,8 +139,8 @@ end
 sigma_l_ko_log_0 = log10(1 * ones(N_param_ko, 1)); % this is perfect for Matern 52
 
 % modified
-sigma_l_ko_log_0 = log10(0.001 * ones(N_param_ko, 1));
-%sigma_l_kx_log_0 = log10(10 * ones(N_param_kx, 1));
+%sigma_l_ko_log_0 = log10(0.001 * ones(N_param_ko, 1));
+sigma_l_kx_log_0 = log10(10 * ones(N_param_kx, 1));
 eta_log_0 = -3;%-2; % it mean 10^-9 in log10 scale
 
 hyperparam_log_0 = [sigma_l_ko_log_0;sigma_l_kx_log_0;eta_log_0];
