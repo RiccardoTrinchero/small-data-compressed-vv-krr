@@ -231,9 +231,6 @@ fprintf('--- PCA+GPR MODEL SUMMARY ---\n');
 % Number of available training samples
 fprintf('Number of training samples: %d\n', size(X_ED,1));
 
-% Kernel name used in the scalar GPR models
-fprintf('Input kernel kx: ardmatern52\n');
-
 % PCA truncation threshold
 fprintf('PCA tolerance: %.1e\n', RelTol);
 
