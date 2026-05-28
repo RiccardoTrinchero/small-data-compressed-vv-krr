@@ -1,6 +1,6 @@
 # compressed-vv-krr
 
-MATLAB implementation of compressed vector-valued kernel ridge regression (VV-KRR) for data-efficient surrogate modeling of electromagnetic structures and microwave components.
+MATLAB implementation of compressed vector-valued kernel ridge regression (VV-KRR) for data-efficient surrogate modeling of electromagnetic structures and microwave components presented in the paper "Small-Data Modeling of Electromagnetic Structures via Compressed Vector-Valued Kernel Ridge Regression" (under review)
 
 ## Overview
 
@@ -16,13 +16,12 @@ The code is intended for small-data multi-output regression problems arising in 
 
 This public release currently includes:
 
-- the dataset for Example 1,
-- the MATLAB implementation of the proposed compressed VV-KRR method,
-- the MATLAB implementation of the PCA+GPR comparison model,
-- the MATLAB implementation of the DNN comparison model,
-- scripts for training, prediction, error evaluation, and figure generation for Example 1.
+- the dataset for Example 1, Example 2 and Example 3
+- the MATLAB implementation of the proposed compressed VV-KRR method for the three examples,
+- the MATLAB implementation of the PCA+GPR comparison model for the three examples,
+- the MATLAB implementation of the DNN comparison model for example 1,
+- scripts for training, prediction, error evaluation, and figure generation for Example 1, 2 and 3.
 
-The other examples discussed in the paper are not included in this release.
 
 ## Main features
 
@@ -42,16 +41,4 @@ The other examples discussed in the paper are not included in this release.
   - PCA + Gaussian-process regression
   - fully connected deep neural network
 
-## Repository structure
 
-```text
-.
-├── data/              % dataset for Example 1
-├── examples/          % scripts to reproduce Example 1
-├── kernels/           % kernel functions
-├── training/          % VV-KRR training routines
-├── prediction/        % VV-KRR prediction routines
-├── baselines/         % PCA+GPR and DNN baseline scripts
-├── utils/             % utility functions
-├── README.md
-├── LICENSE
